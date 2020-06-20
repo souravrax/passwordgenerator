@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- <link rel="stylesheet" href="/styles/skeuos.css"> -->
+</head>
+
+<body>
+    <div class="form">
+        <h2>Random Password Generator</h2>
+        <input id="password" type="text" name="" placeholder="Generate Password" readonly="">
+        
+        <div class="other-option">
+            <h3>Options</h3>
+            <div class="option">
+                <label>Length</label>
+                <input type="number" name="" id="length" value="16" min="4" max="26">
+            </div>
+
+            <div class="option">
+                <label>Lowercase</label>
+                <input type="checkbox" name="" id="lowercase" checked>
+            </div>
+            <div class="option">
+                <label>Uppercase</label>
+                <input type="checkbox" name="" id="uppercase" checked>
+            </div>
+            <div class="option">
+                <label>Symbols</label>
+                <input type="checkbox" name="" id="symbols" checked>
+            </div>
+            <div class="option">
+                <label>Numbers</label>
+                <input type="checkbox" name="" id="numbers" checked>
+            </div>
+        </div>
+        
+        <button id="btn" onclick="generate()">Generate Password</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
